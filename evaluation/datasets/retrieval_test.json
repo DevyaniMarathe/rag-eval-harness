@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "question": "What architecture are large language models such as GPT and BERT typically based on?",
+    "ground_truth": "They are typically based on deep learning, particularly the transformer architecture.",
+    "relevant_chunk_ids": [16]
+  },
+  {
+    "id": 2,
+    "question": "What is the purpose of the self-attention mechanism in a Transformer?",
+    "ground_truth": "Self-attention allows the model to focus on different positions in the input sequence and calculate attention scores between them.",
+    "relevant_chunk_ids": [17]
+  },
+  {
+    "id": 3,
+    "question": "Why does the Transformer use a multi-head attention mechanism?",
+    "ground_truth": "It allows the model to focus on information from different subspaces simultaneously.",
+    "relevant_chunk_ids": [18]
+  },
+  {
+    "id": 4,
+    "question": "Why is positional encoding added to Transformer inputs?",
+    "ground_truth": "Because Transformers lack inherent sequential order processing like RNNs, positional encoding provides position information for elements in the sequence.",
+    "relevant_chunk_ids": [19]
+  },
+  {
+    "id": 5,
+    "question": "How can large language models improve agricultural disease diagnosis?",
+    "ground_truth": "They can analyze agricultural text such as disease descriptions and treatment methods and can be combined with image recognition technology to provide more accurate disease diagnostics.",
+    "relevant_chunk_ids": [21]
+  },
+  {
+    "id": 6,
+    "question": "How are CNNs used for crop disease detection?",
+    "ground_truth": "CNNs extract features from crop images and use those features to identify different types of crop diseases.",
+    "relevant_chunk_ids": [24]
+  },
+  {
+    "id": 7,
+    "question": "How does YOLO perform object detection?",
+    "ground_truth": "YOLO treats object detection as a regression problem and directly predicts the categories and positions of targets in a single network.",
+    "relevant_chunk_ids": [25]
+  },
+  {
+    "id": 8,
+    "question": "How can YOLO be used for agricultural disease detection?",
+    "ground_truth": "YOLO can rapidly locate and classify diseases within crop images, helping identify affected areas and enabling timely intervention.",
+    "relevant_chunk_ids": [27]
+  },
+  {
+    "id": 9,
+    "question": "Which model achieved the highest performance in agricultural image captioning?",
+    "ground_truth": "The proposed method achieved the highest performance, with precision of 0.92, recall of 0.88, and accuracy of 0.91.",
+    "relevant_chunk_ids": [33]
+  },
+  {
+    "id": 10,
+    "question": "What were the precision, recall, and accuracy achieved by the proposed method in object detection?",
+    "ground_truth": "The proposed method achieved a precision of 0.96, recall of 0.91, and accuracy of 0.94.",
+    "relevant_chunk_ids": [107]
+  },
+  {
+    "id": 11,
+    "question": "What was the purpose of the multimodal dataset ablation experiment?",
+    "ground_truth": "It was conducted to explore the impact of different data modalities, including image, text, and sensor data, on model performance.",
+    "relevant_chunk_ids": [42]
+  },
+  {
+    "id": 12,
+    "question": "What precision, recall, and accuracy were achieved when image, text, and sensor data were all used together?",
+    "ground_truth": "Using image, text, and sensor data together achieved a precision of 0.96, recall of 0.93, and accuracy of 0.94.",
+    "relevant_chunk_ids": [42]
+  },
+  {
+    "id": 13,
+    "question": "What performance did the multimodal loss achieve in the object detection task?",
+    "ground_truth": "The multimodal loss achieved a precision of 0.96, recall of 0.92, and accuracy of 0.94 in the object detection task.",
+    "relevant_chunk_ids": [50]
+  },
+  {
+    "id": 14,
+    "question": "What is the main purpose of the multimodal alignment module?",
+    "ground_truth": "The multimodal alignment module fuses data from different modalities and provides a unified and coordinated representation for subsequent processing and analysis.",
+    "relevant_chunk_ids": [80]
+  },
+  {
+    "id": 15,
+    "question": "How is the dataset divided for training, validation, and testing?",
+    "ground_truth": "The dataset is divided into 70% training data, 15% validation data, and 15% test data.",
+    "relevant_chunk_ids": [101]
+  }
+]
