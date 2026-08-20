@@ -1,0 +1,16 @@
+{
+  "experiment": "baseline",
+  "questions_evaluated": 15,
+  "metrics": {
+    "hit_at_1": 0.667,
+    "hit_at_3": 0.867,
+    "hit_at_5": 0.933,
+    "recall_at_5": 0.933,
+    "mrr": 0.783
+  },
+  "retrieval": {
+    "embedding_model": "all-MiniLM-L6-v2",
+    "top_k": 5,
+    "vector_database": "Qdrant"
+  }
+}
