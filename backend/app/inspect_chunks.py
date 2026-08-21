@@ -1,31 +1,35 @@
 from backend.app.qdrant_config import client
 
-
 COLLECTION_NAME = "documents"
 
+chunk_id = int(input("Enter chunk ID: "))
 
-def inspect_chunks():
-    offset = None
+results = client.scroll(
+    collection_name=COLLECTION_NAME,
+    scroll_filter={
+        "must": [
+            {
+                "key": "chunk_id",
+                "match": {
+                    "value": chunk_id
+                }
+            }
+        ]
+    },
+    limit=1,
+    with_payload=True,
+)
 
-    while True:
-        points, offset = client.scroll(
-            collection_name=COLLECTION_NAME,
-            limit=20,
-            offset=offset,
-            with_payload=True,
-            with_vectors=False,
-        )
+points = results[0]
 
-        for point in points:
-            print("=" * 80)
-            print(f"Chunk ID: {point.payload.get('chunk_id')}")
-            print(f"Source: {point.payload.get('source')}")
-            print()
-            print(point.payload.get("text"))
+if not points:
+    print(f"\nChunk {chunk_id} not found.")
+else:
+    point = points[0]
 
-        if offset is None:
-            break
-
-
-if __name__ == "__main__":
-    inspect_chunks()
+    print("\n" + "=" * 70)
+    print(f"Chunk ID: {chunk_id}")
+    print("=" * 70)
+    print(f"Source: {point.payload.get('source')}")
+    print("\nText:\n")
+    print(point.payload.get("text"))

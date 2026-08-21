@@ -1,10 +1,10 @@
 from pathlib import Path
 from uuid import uuid4
 
-from document_loader import extract_text_from_pdf
-from text_chunker import split_text
-from embedding_service import generate_embeddings
-from qdrant_config import client
+from backend.app.document_loader import extract_text_from_pdf
+from backend.app.text_chunker import split_text
+from backend.app.embedding_service import generate_embeddings
+from backend.app.qdrant_config import client
 
 
 COLLECTION_NAME = "documents"

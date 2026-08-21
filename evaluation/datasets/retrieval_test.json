@@ -57,7 +57,7 @@
     "id": 10,
     "question": "What were the precision, recall, and accuracy achieved by the proposed method in object detection?",
     "ground_truth": "The proposed method achieved a precision of 0.96, recall of 0.91, and accuracy of 0.94.",
-    "relevant_chunk_ids": [107]
+    "relevant_chunk_ids": [37]
   },
   {
     "id": 11,

@@ -3,8 +3,8 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 def split_text(
     text: str,
-    chunk_size: int = 1000,
-    chunk_overlap: int = 200
+    chunk_size = 1000,
+    chunk_overlap = 200
 ) -> list[str]:
     """
     Split extracted document text into overlapping chunks.
@@ -22,7 +22,7 @@ def split_text(
 
 
 if __name__ == "__main__":
-    from document_loader import extract_text_from_pdf
+    from backend.app.document_loader import extract_text_from_pdf
     from pathlib import Path
 
     pdf_folder = Path("data/documents")

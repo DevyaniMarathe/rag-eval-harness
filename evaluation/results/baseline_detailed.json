@@ -1,0 +1,408 @@
+{
+  "experiment": "baseline",
+  "questions_evaluated": 15,
+  "retrieval_configuration": {
+    "top_k": 5,
+    "vector_database": "Qdrant",
+    "embedding_model": "all-MiniLM-L6-v2"
+  },
+  "metrics": {
+    "hit_at_1": 0.6666666666666666,
+    "hit_at_3": 0.9333333333333333,
+    "hit_at_5": 1.0,
+    "recall_at_5": 1.0,
+    "mrr": 0.8166666666666667
+  },
+  "questions": [
+    {
+      "question_id": 1,
+      "question": "What architecture are large language models such as GPT and BERT typically based on?",
+      "relevant_chunk_ids": [
+        16
+      ],
+      "retrieved_chunk_ids": [
+        16,
+        17,
+        120,
+        15,
+        94
+      ],
+      "similarity_scores": [
+        0.49523303,
+        0.47356924,
+        0.4555494,
+        0.41089898,
+        0.32572284
+      ],
+      "hit_at_1": 1,
+      "hit_at_3": 1,
+      "hit_at_5": 1,
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": 2,
+      "question": "What is the purpose of the self-attention mechanism in a Transformer?",
+      "relevant_chunk_ids": [
+        17
+      ],
+      "retrieved_chunk_ids": [
+        87,
+        19,
+        18,
+        17,
+        88
+      ],
+      "similarity_scores": [
+        0.60849273,
+        0.5334853,
+        0.52737653,
+        0.47151223,
+        0.45156586
+      ],
+      "hit_at_1": 0,
+      "hit_at_3": 0,
+      "hit_at_5": 1,
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 0.25
+    },
+    {
+      "question_id": 3,
+      "question": "Why does the Transformer use a multi-head attention mechanism?",
+      "relevant_chunk_ids": [
+        18
+      ],
+      "retrieved_chunk_ids": [
+        18,
+        87,
+        19,
+        88,
+        17
+      ],
+      "similarity_scores": [
+        0.6809881,
+        0.540152,
+        0.5234246,
+        0.44254333,
+        0.4241562
+      ],
+      "hit_at_1": 1,
+      "hit_at_3": 1,
+      "hit_at_5": 1,
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": 4,
+      "question": "Why is positional encoding added to Transformer inputs?",
+      "relevant_chunk_ids": [
+        19
+      ],
+      "retrieved_chunk_ids": [
+        19,
+        87,
+        18,
+        17,
+        84
+      ],
+      "similarity_scores": [
+        0.65118,
+        0.48075336,
+        0.4302127,
+        0.41612816,
+        0.40317193
+      ],
+      "hit_at_1": 1,
+      "hit_at_3": 1,
+      "hit_at_5": 1,
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": 5,
+      "question": "How can large language models improve agricultural disease diagnosis?",
+      "relevant_chunk_ids": [
+        21
+      ],
+      "retrieved_chunk_ids": [
+        21,
+        15,
+        20,
+        51,
+        6
+      ],
+      "similarity_scores": [
+        0.7663576,
+        0.7149203,
+        0.6974759,
+        0.6237638,
+        0.6157879
+      ],
+      "hit_at_1": 1,
+      "hit_at_3": 1,
+      "hit_at_5": 1,
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": 6,
+      "question": "How are CNNs used for crop disease detection?",
+      "relevant_chunk_ids": [
+        24
+      ],
+      "retrieved_chunk_ids": [
+        22,
+        24,
+        27,
+        7,
+        30
+      ],
+      "similarity_scores": [
+        0.7045864,
+        0.6815592,
+        0.6680947,
+        0.6611674,
+        0.6599114
+      ],
+      "hit_at_1": 0,
+      "hit_at_3": 1,
+      "hit_at_5": 1,
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "question_id": 7,
+      "question": "How does YOLO perform object detection?",
+      "relevant_chunk_ids": [
+        25
+      ],
+      "retrieved_chunk_ids": [
+        25,
+        40,
+        24,
+        115,
+        22
+      ],
+      "similarity_scores": [
+        0.770654,
+        0.68907195,
+        0.64393353,
+        0.58565915,
+        0.53844845
+      ],
+      "hit_at_1": 1,
+      "hit_at_3": 1,
+      "hit_at_5": 1,
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": 8,
+      "question": "How can YOLO be used for agricultural disease detection?",
+      "relevant_chunk_ids": [
+        27
+      ],
+      "retrieved_chunk_ids": [
+        27,
+        40,
+        37,
+        4,
+        1
+      ],
+      "similarity_scores": [
+        0.7269018,
+        0.6466241,
+        0.6218169,
+        0.61088896,
+        0.5879178
+      ],
+      "hit_at_1": 1,
+      "hit_at_3": 1,
+      "hit_at_5": 1,
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": 9,
+      "question": "Which model achieved the highest performance in agricultural image captioning?",
+      "relevant_chunk_ids": [
+        33
+      ],
+      "retrieved_chunk_ids": [
+        106,
+        33,
+        34,
+        35,
+        105
+      ],
+      "similarity_scores": [
+        0.6960589,
+        0.69225144,
+        0.66040605,
+        0.6602351,
+        0.6565352
+      ],
+      "hit_at_1": 0,
+      "hit_at_3": 1,
+      "hit_at_5": 1,
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "question_id": 10,
+      "question": "What were the precision, recall, and accuracy achieved by the proposed method in object detection?",
+      "relevant_chunk_ids": [
+        37
+      ],
+      "retrieved_chunk_ids": [
+        39,
+        37,
+        40,
+        103,
+        28
+      ],
+      "similarity_scores": [
+        0.57077837,
+        0.54186445,
+        0.53922987,
+        0.5082203,
+        0.49009678
+      ],
+      "hit_at_1": 0,
+      "hit_at_3": 1,
+      "hit_at_5": 1,
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "question_id": 11,
+      "question": "What was the purpose of the multimodal dataset ablation experiment?",
+      "relevant_chunk_ids": [
+        42
+      ],
+      "retrieved_chunk_ids": [
+        42,
+        107,
+        46,
+        45,
+        78
+      ],
+      "similarity_scores": [
+        0.61717695,
+        0.5905333,
+        0.5754874,
+        0.48871842,
+        0.40514135
+      ],
+      "hit_at_1": 1,
+      "hit_at_3": 1,
+      "hit_at_5": 1,
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": 12,
+      "question": "What precision, recall, and accuracy were achieved when image, text, and sensor data were all used together?",
+      "relevant_chunk_ids": [
+        42
+      ],
+      "retrieved_chunk_ids": [
+        42,
+        103,
+        43,
+        44,
+        45
+      ],
+      "similarity_scores": [
+        0.5585606,
+        0.48788944,
+        0.47795284,
+        0.46093047,
+        0.44491413
+      ],
+      "hit_at_1": 1,
+      "hit_at_3": 1,
+      "hit_at_5": 1,
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": 13,
+      "question": "What performance did the multimodal loss achieve in the object detection task?",
+      "relevant_chunk_ids": [
+        50
+      ],
+      "retrieved_chunk_ids": [
+        50,
+        48,
+        47,
+        49,
+        92
+      ],
+      "similarity_scores": [
+        0.64727473,
+        0.6315596,
+        0.62482524,
+        0.5858407,
+        0.5639638
+      ],
+      "hit_at_1": 1,
+      "hit_at_3": 1,
+      "hit_at_5": 1,
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": 14,
+      "question": "What is the main purpose of the multimodal alignment module?",
+      "relevant_chunk_ids": [
+        80
+      ],
+      "retrieved_chunk_ids": [
+        80,
+        83,
+        53,
+        77,
+        52
+      ],
+      "similarity_scores": [
+        0.6402241,
+        0.5840798,
+        0.5796527,
+        0.5652537,
+        0.5600978
+      ],
+      "hit_at_1": 1,
+      "hit_at_3": 1,
+      "hit_at_5": 1,
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": 15,
+      "question": "How is the dataset divided for training, validation, and testing?",
+      "relevant_chunk_ids": [
+        101
+      ],
+      "retrieved_chunk_ids": [
+        100,
+        101,
+        99,
+        102,
+        97
+      ],
+      "similarity_scores": [
+        0.6407833,
+        0.6282016,
+        0.57081115,
+        0.52420455,
+        0.3692729
+      ],
+      "hit_at_1": 0,
+      "hit_at_3": 1,
+      "hit_at_5": 1,
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 0.5
+    }
+  ]
+}
